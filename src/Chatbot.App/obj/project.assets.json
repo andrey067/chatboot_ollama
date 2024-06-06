@@ -1,0 +1,753 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "LangChain.Core/0.13.0": {
+        "type": "package",
+        "dependencies": {
+          "LangChain.Polyfills": "0.13.0",
+          "LangChain.Providers.Abstractions": "0.13.0",
+          "LangChain.Sources.Abstractions": "0.13.0",
+          "LangChain.Splitters.Abstractions": "0.13.0"
+        },
+        "compile": {
+          "lib/net8.0/LangChain.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LangChain.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LangChain.Polyfills/0.13.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/LangChain.Polyfills.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LangChain.Polyfills.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LangChain.Providers.Abstractions/0.13.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory.Data": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/LangChain.Providers.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LangChain.Providers.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LangChain.Providers.Ollama/0.13.0": {
+        "type": "package",
+        "dependencies": {
+          "LangChain.Providers.Abstractions": "0.13.0"
+        },
+        "compile": {
+          "lib/net8.0/LangChain.Providers.Ollama.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LangChain.Providers.Ollama.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LangChain.Serve/0.13.0": {
+        "type": "package",
+        "dependencies": {
+          "LangChain.Core": "0.13.0"
+        },
+        "compile": {
+          "lib/net8.0/LangChain.Serve.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LangChain.Serve.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "LangChain.Sources.Abstractions/0.13.0": {
+        "type": "package",
+        "dependencies": {
+          "LangChain.Polyfills": "0.13.0"
+        },
+        "compile": {
+          "lib/net8.0/LangChain.Sources.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LangChain.Sources.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LangChain.Splitters.Abstractions/0.13.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/LangChain.Splitters.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LangChain.Splitters.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Memory.Data/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Memory.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Memory.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Text.Encodings.Web/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll": {
+            "assetType": "runtime",
+            "rid": "browser"
+          }
+        }
+      },
+      "System.Text.Json/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encodings.Web": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/System.Text.Json.targets": {}
+        }
+      },
+      "Chatbot.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "LangChain.Core": "0.13.0",
+          "LangChain.Providers.Ollama": "0.13.0",
+          "LangChain.Serve": "0.13.0"
+        },
+        "compile": {
+          "bin/placeholder/Chatbot.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Chatbot.Shared.dll": {}
+        }
+      }
+    },
+    "net8.0/browser-wasm": {
+      "LangChain.Core/0.13.0": {
+        "type": "package",
+        "dependencies": {
+          "LangChain.Polyfills": "0.13.0",
+          "LangChain.Providers.Abstractions": "0.13.0",
+          "LangChain.Sources.Abstractions": "0.13.0",
+          "LangChain.Splitters.Abstractions": "0.13.0"
+        },
+        "compile": {
+          "lib/net8.0/LangChain.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LangChain.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LangChain.Polyfills/0.13.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/LangChain.Polyfills.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LangChain.Polyfills.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LangChain.Providers.Abstractions/0.13.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory.Data": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/LangChain.Providers.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LangChain.Providers.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LangChain.Providers.Ollama/0.13.0": {
+        "type": "package",
+        "dependencies": {
+          "LangChain.Providers.Abstractions": "0.13.0"
+        },
+        "compile": {
+          "lib/net8.0/LangChain.Providers.Ollama.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LangChain.Providers.Ollama.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LangChain.Serve/0.13.0": {
+        "type": "package",
+        "dependencies": {
+          "LangChain.Core": "0.13.0"
+        },
+        "compile": {
+          "lib/net8.0/LangChain.Serve.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LangChain.Serve.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "LangChain.Sources.Abstractions/0.13.0": {
+        "type": "package",
+        "dependencies": {
+          "LangChain.Polyfills": "0.13.0"
+        },
+        "compile": {
+          "lib/net8.0/LangChain.Sources.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LangChain.Sources.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LangChain.Splitters.Abstractions/0.13.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/LangChain.Splitters.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LangChain.Splitters.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Memory.Data/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Memory.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Memory.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Text.Encodings.Web/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Text.Json/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encodings.Web": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/System.Text.Json.targets": {}
+        }
+      },
+      "Chatbot.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "LangChain.Core": "0.13.0",
+          "LangChain.Providers.Ollama": "0.13.0",
+          "LangChain.Serve": "0.13.0"
+        },
+        "compile": {
+          "bin/placeholder/Chatbot.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Chatbot.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LangChain.Core/0.13.0": {
+      "sha512": "pkrspiBkOx4sLrghghfeuXuUjjUPSen56cTYunkRgjZYDQCwi0PiSouZ1jJx5xcw9RCjkv6OznalBoOY+rK3UA==",
+      "type": "package",
+      "path": "langchain.core/0.13.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "langchain.core.0.13.0.nupkg.sha512",
+        "langchain.core.nuspec",
+        "lib/net462/LangChain.Core.dll",
+        "lib/net462/LangChain.Core.xml",
+        "lib/net6.0/LangChain.Core.dll",
+        "lib/net6.0/LangChain.Core.xml",
+        "lib/net7.0/LangChain.Core.dll",
+        "lib/net7.0/LangChain.Core.xml",
+        "lib/net8.0/LangChain.Core.dll",
+        "lib/net8.0/LangChain.Core.xml",
+        "lib/netstandard2.0/LangChain.Core.dll",
+        "lib/netstandard2.0/LangChain.Core.xml",
+        "nuget_icon.png"
+      ]
+    },
+    "LangChain.Polyfills/0.13.0": {
+      "sha512": "g3AO5E3AB5i4l5jygjz4PfUIZvQ7rbr4juUBLjWUEqZ0R+6IYW6oAeOpQtN8zED1dvnPRkf9CCrLVZyBaKLBKA==",
+      "type": "package",
+      "path": "langchain.polyfills/0.13.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "langchain.polyfills.0.13.0.nupkg.sha512",
+        "langchain.polyfills.nuspec",
+        "lib/net462/LangChain.Polyfills.dll",
+        "lib/net462/LangChain.Polyfills.xml",
+        "lib/net6.0/LangChain.Polyfills.dll",
+        "lib/net6.0/LangChain.Polyfills.xml",
+        "lib/net7.0/LangChain.Polyfills.dll",
+        "lib/net7.0/LangChain.Polyfills.xml",
+        "lib/net8.0/LangChain.Polyfills.dll",
+        "lib/net8.0/LangChain.Polyfills.xml",
+        "lib/netstandard2.0/LangChain.Polyfills.dll",
+        "lib/netstandard2.0/LangChain.Polyfills.xml",
+        "nuget_icon.png"
+      ]
+    },
+    "LangChain.Providers.Abstractions/0.13.0": {
+      "sha512": "LfPpUuAaSpNtzMsy2NqqlJu542kV8Y856VtBpRLKKNcdn+y/sPh2Zo3k+fpope7ucdY737U+ind7S6zkqCoK/w==",
+      "type": "package",
+      "path": "langchain.providers.abstractions/0.13.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "langchain.providers.abstractions.0.13.0.nupkg.sha512",
+        "langchain.providers.abstractions.nuspec",
+        "lib/net462/LangChain.Providers.Abstractions.dll",
+        "lib/net462/LangChain.Providers.Abstractions.xml",
+        "lib/net6.0/LangChain.Providers.Abstractions.dll",
+        "lib/net6.0/LangChain.Providers.Abstractions.xml",
+        "lib/net7.0/LangChain.Providers.Abstractions.dll",
+        "lib/net7.0/LangChain.Providers.Abstractions.xml",
+        "lib/net8.0/LangChain.Providers.Abstractions.dll",
+        "lib/net8.0/LangChain.Providers.Abstractions.xml",
+        "lib/netstandard2.0/LangChain.Providers.Abstractions.dll",
+        "lib/netstandard2.0/LangChain.Providers.Abstractions.xml",
+        "nuget_icon.png"
+      ]
+    },
+    "LangChain.Providers.Ollama/0.13.0": {
+      "sha512": "QRPrW/obboLonV1/TcxGmQUL1cWSl8hPs3sQru/GJjsmSH1UabHtPSgz4ZAV1xBQETRSqOuv5Kw7Qk8/OLwspw==",
+      "type": "package",
+      "path": "langchain.providers.ollama/0.13.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "langchain.providers.ollama.0.13.0.nupkg.sha512",
+        "langchain.providers.ollama.nuspec",
+        "lib/net462/LangChain.Providers.Ollama.dll",
+        "lib/net462/LangChain.Providers.Ollama.xml",
+        "lib/net6.0/LangChain.Providers.Ollama.dll",
+        "lib/net6.0/LangChain.Providers.Ollama.xml",
+        "lib/net7.0/LangChain.Providers.Ollama.dll",
+        "lib/net7.0/LangChain.Providers.Ollama.xml",
+        "lib/net8.0/LangChain.Providers.Ollama.dll",
+        "lib/net8.0/LangChain.Providers.Ollama.xml",
+        "lib/netstandard2.0/LangChain.Providers.Ollama.dll",
+        "lib/netstandard2.0/LangChain.Providers.Ollama.xml",
+        "nuget_icon.png"
+      ]
+    },
+    "LangChain.Serve/0.13.0": {
+      "sha512": "0Fv8CBtYwediuJZm2+/G4dsWl/+eZMhNeuIFa3dnOIwHB4NPHCOfdPYv23OvDoMhkm2opuBnpw5O6ocXxhKquw==",
+      "type": "package",
+      "path": "langchain.serve/0.13.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "langchain.serve.0.13.0.nupkg.sha512",
+        "langchain.serve.nuspec",
+        "lib/net8.0/LangChain.Serve.dll",
+        "lib/net8.0/LangChain.Serve.xml",
+        "nuget_icon.png"
+      ]
+    },
+    "LangChain.Sources.Abstractions/0.13.0": {
+      "sha512": "QMzWOAsn7lRIEhAZkdyC+zN1KyhHwcGtOQMhgXriH5y49YrQZZ0pbqlAdILcB0OBk2IZX92dukWqFYxWNYCgWQ==",
+      "type": "package",
+      "path": "langchain.sources.abstractions/0.13.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "langchain.sources.abstractions.0.13.0.nupkg.sha512",
+        "langchain.sources.abstractions.nuspec",
+        "lib/net462/LangChain.Sources.Abstractions.dll",
+        "lib/net462/LangChain.Sources.Abstractions.xml",
+        "lib/net6.0/LangChain.Sources.Abstractions.dll",
+        "lib/net6.0/LangChain.Sources.Abstractions.xml",
+        "lib/net7.0/LangChain.Sources.Abstractions.dll",
+        "lib/net7.0/LangChain.Sources.Abstractions.xml",
+        "lib/net8.0/LangChain.Sources.Abstractions.dll",
+        "lib/net8.0/LangChain.Sources.Abstractions.xml",
+        "lib/netstandard2.0/LangChain.Sources.Abstractions.dll",
+        "lib/netstandard2.0/LangChain.Sources.Abstractions.xml",
+        "nuget_icon.png"
+      ]
+    },
+    "LangChain.Splitters.Abstractions/0.13.0": {
+      "sha512": "ULS4Znl/u4Ag1UTy2VuqcBOEO0jgQyAusX9TAPFJeqcDDAoC5ABkCLuH2loz6aWaC64Yev6wgHtaR0/MrMwZKw==",
+      "type": "package",
+      "path": "langchain.splitters.abstractions/0.13.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "langchain.splitters.abstractions.0.13.0.nupkg.sha512",
+        "langchain.splitters.abstractions.nuspec",
+        "lib/net462/LangChain.Splitters.Abstractions.dll",
+        "lib/net462/LangChain.Splitters.Abstractions.xml",
+        "lib/net6.0/LangChain.Splitters.Abstractions.dll",
+        "lib/net6.0/LangChain.Splitters.Abstractions.xml",
+        "lib/net7.0/LangChain.Splitters.Abstractions.dll",
+        "lib/net7.0/LangChain.Splitters.Abstractions.xml",
+        "lib/net8.0/LangChain.Splitters.Abstractions.dll",
+        "lib/net8.0/LangChain.Splitters.Abstractions.xml",
+        "lib/netstandard2.0/LangChain.Splitters.Abstractions.dll",
+        "lib/netstandard2.0/LangChain.Splitters.Abstractions.xml",
+        "nuget_icon.png"
+      ]
+    },
+    "System.Memory.Data/8.0.0": {
+      "sha512": "iNz0OOSj4bcOdVvyBzaDwJe0aA2nbGVQzUGAaN4bngJu2g8tMncWb7SsR/EdSMCyf0J3KHMCYu3QR/bnckxvdg==",
+      "type": "package",
+      "path": "system.memory.data/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Memory.Data.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Memory.Data.targets",
+        "lib/net462/System.Memory.Data.dll",
+        "lib/net462/System.Memory.Data.xml",
+        "lib/net6.0/System.Memory.Data.dll",
+        "lib/net6.0/System.Memory.Data.xml",
+        "lib/net7.0/System.Memory.Data.dll",
+        "lib/net7.0/System.Memory.Data.xml",
+        "lib/net8.0/System.Memory.Data.dll",
+        "lib/net8.0/System.Memory.Data.xml",
+        "lib/netstandard2.0/System.Memory.Data.dll",
+        "lib/netstandard2.0/System.Memory.Data.xml",
+        "system.memory.data.8.0.0.nupkg.sha512",
+        "system.memory.data.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Text.Encodings.Web/8.0.0": {
+      "sha512": "yev/k9GHAEGx2Rg3/tU6MQh4HGBXJs70y7j1LaM1i/ER9po+6nnQ6RRqTJn1E7Xu0fbIFK80Nh5EoODxrbxwBQ==",
+      "type": "package",
+      "path": "system.text.encodings.web/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Text.Encodings.Web.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Text.Encodings.Web.targets",
+        "lib/net462/System.Text.Encodings.Web.dll",
+        "lib/net462/System.Text.Encodings.Web.xml",
+        "lib/net6.0/System.Text.Encodings.Web.dll",
+        "lib/net6.0/System.Text.Encodings.Web.xml",
+        "lib/net7.0/System.Text.Encodings.Web.dll",
+        "lib/net7.0/System.Text.Encodings.Web.xml",
+        "lib/net8.0/System.Text.Encodings.Web.dll",
+        "lib/net8.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard2.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.0/System.Text.Encodings.Web.xml",
+        "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll",
+        "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.xml",
+        "runtimes/browser/lib/net7.0/System.Text.Encodings.Web.dll",
+        "runtimes/browser/lib/net7.0/System.Text.Encodings.Web.xml",
+        "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll",
+        "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.xml",
+        "system.text.encodings.web.8.0.0.nupkg.sha512",
+        "system.text.encodings.web.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Text.Json/8.0.0": {
+      "sha512": "OdrZO2WjkiEG6ajEFRABTRCi/wuXQPxeV6g8xvUJqdxMvvuCCEk86zPla8UiIQJz3durtUEbNyY/3lIhS0yZvQ==",
+      "type": "package",
+      "path": "system.text.json/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/roslyn3.11/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn3.11/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn4.0/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn4.4/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "buildTransitive/net461/System.Text.Json.targets",
+        "buildTransitive/net462/System.Text.Json.targets",
+        "buildTransitive/net6.0/System.Text.Json.targets",
+        "buildTransitive/netcoreapp2.0/System.Text.Json.targets",
+        "buildTransitive/netstandard2.0/System.Text.Json.targets",
+        "lib/net462/System.Text.Json.dll",
+        "lib/net462/System.Text.Json.xml",
+        "lib/net6.0/System.Text.Json.dll",
+        "lib/net6.0/System.Text.Json.xml",
+        "lib/net7.0/System.Text.Json.dll",
+        "lib/net7.0/System.Text.Json.xml",
+        "lib/net8.0/System.Text.Json.dll",
+        "lib/net8.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.8.0.0.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Chatbot.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Chatbot.Shared/Chatbot.Shared.csproj",
+      "msbuildProject": "../Chatbot.Shared/Chatbot.Shared.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Chatbot.Shared >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\andre\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.App\\Chatbot.App.csproj",
+      "projectName": "Chatbot.App",
+      "projectPath": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.App\\Chatbot.App.csproj",
+      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
+      "outputPath": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.App\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.Shared\\Chatbot.Shared.csproj": {
+              "projectPath": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.Shared\\Chatbot.Shared.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "browser-wasm": {
+        "#import": []
+      }
+    }
+  }
+}

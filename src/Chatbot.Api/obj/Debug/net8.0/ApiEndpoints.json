@@ -1,0 +1,170 @@
+[
+  {
+    "ContainingType": "Chatbot.Api.Controllers.PdfController",
+    "Method": "UploadPdf",
+    "RelativePath": "api/Pdf/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "question",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LangChain.Serve.ServeExtensions\u002B\u003C\u003Ec__DisplayClass2_0",
+    "Method": "\u003CUseLangChainServe\u003Eb__1",
+    "RelativePath": "serve/conversations",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LangChain.Serve.ServeExtensions\u002B\u003C\u003Ec__DisplayClass2_0",
+    "Method": "\u003CUseLangChainServe\u003Eb__2",
+    "RelativePath": "serve/conversations",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "conversationCreation",
+        "Type": "LangChain.Serve.Classes.DTO.ConversationCreationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LangChain.Serve.ServeExtensions\u002B\u003C\u003Ec__DisplayClass2_0",
+    "Method": "\u003CUseLangChainServe\u003Eb__4",
+    "RelativePath": "serve/conversations/{conversationId:guid}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "conversationId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LangChain.Serve.ServeExtensions\u002B\u003C\u003Ec__DisplayClass2_0",
+    "Method": "\u003CUseLangChainServe\u003Eb__6",
+    "RelativePath": "serve/conversations/{conversationId:guid}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "conversationId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LangChain.Serve.ServeExtensions\u002B\u003C\u003Ec__DisplayClass2_0",
+    "Method": "\u003CUseLangChainServe\u003Eb__3",
+    "RelativePath": "serve/conversations/{conversationId:guid}/messages",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "message",
+        "Type": "LangChain.Serve.Classes.DTO.PostMessageDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "conversationId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LangChain.Serve.ServeExtensions\u002B\u003C\u003Ec__DisplayClass2_0",
+    "Method": "\u003CUseLangChainServe\u003Eb__5",
+    "RelativePath": "serve/conversations/{conversationId:guid}/messages",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "conversationId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LangChain.Serve.ServeExtensions\u002B\u003C\u003Ec__DisplayClass2_0",
+    "Method": "\u003CUseLangChainServe\u003Eb__0",
+    "RelativePath": "serve/models",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

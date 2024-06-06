@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\Estudo\\Blazor\\Jornada FullStack Balta\\Fina\\src\\Fina.App\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "F:\\Estudo\\Blazor\\Jornada FullStack Balta\\Fina\\src\\Fina.App\\obj\\Debug\\net8.0\\compressed\\0jk415wjzw.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "F:\\Estudo\\Blazor\\Jornada FullStack Balta\\Fina\\src\\Fina.App\\obj\\Debug\\net8.0\\service-worker-assets.js",
+      "PackagePath": "staticwebassets\\service-worker-assets.js"
+    },
+    {
+      "Id": "F:\\Estudo\\Blazor\\Jornada FullStack Balta\\Fina\\src\\Fina.App\\obj\\Debug\\net8.0\\service-worker\\service-worker.published.js",
+      "PackagePath": "staticwebassets\\service-worker.js"
+    },
+    {
+      "Id": "F:\\Estudo\\Blazor\\Jornada FullStack Balta\\Fina\\src\\Fina.App\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "F:\\Estudo\\Blazor\\Jornada FullStack Balta\\Fina\\src\\Fina.App\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "F:\\Estudo\\Blazor\\Jornada FullStack Balta\\Fina\\src\\Fina.App\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "F:\\Estudo\\Blazor\\Jornada FullStack Balta\\Fina\\src\\Fina.App\\wwwroot\\icon-512.png",
+      "PackagePath": "staticwebassets\\icon-512.png"
+    },
+    {
+      "Id": "F:\\Estudo\\Blazor\\Jornada FullStack Balta\\Fina\\src\\Fina.App\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "F:\\Estudo\\Blazor\\Jornada FullStack Balta\\Fina\\src\\Fina.App\\wwwroot\\manifest.webmanifest",
+      "PackagePath": "staticwebassets\\manifest.webmanifest"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Fina.App.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Fina.App.props",
+      "PackagePath": "build\\Fina.App.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Fina.App.props",
+      "PackagePath": "buildMultiTargeting\\Fina.App.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Fina.App.props",
+      "PackagePath": "buildTransitive\\Fina.App.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

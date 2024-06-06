@@ -1,0 +1,12 @@
+E:\Trabalho Inovvati\ProjetosTests\Chatbot\src\Chatbot.Shared\bin\Debug\net8.0\Chatbot.Shared.deps.json
+E:\Trabalho Inovvati\ProjetosTests\Chatbot\src\Chatbot.Shared\bin\Debug\net8.0\Chatbot.Shared.dll
+E:\Trabalho Inovvati\ProjetosTests\Chatbot\src\Chatbot.Shared\bin\Debug\net8.0\Chatbot.Shared.pdb
+E:\Trabalho Inovvati\ProjetosTests\Chatbot\src\Chatbot.Shared\obj\Debug\net8.0\Chatbot.Shared.csproj.AssemblyReference.cache
+E:\Trabalho Inovvati\ProjetosTests\Chatbot\src\Chatbot.Shared\obj\Debug\net8.0\Chatbot.Shared.GeneratedMSBuildEditorConfig.editorconfig
+E:\Trabalho Inovvati\ProjetosTests\Chatbot\src\Chatbot.Shared\obj\Debug\net8.0\Chatbot.Shared.AssemblyInfoInputs.cache
+E:\Trabalho Inovvati\ProjetosTests\Chatbot\src\Chatbot.Shared\obj\Debug\net8.0\Chatbot.Shared.AssemblyInfo.cs
+E:\Trabalho Inovvati\ProjetosTests\Chatbot\src\Chatbot.Shared\obj\Debug\net8.0\Chatbot.Shared.csproj.CoreCompileInputs.cache
+E:\Trabalho Inovvati\ProjetosTests\Chatbot\src\Chatbot.Shared\obj\Debug\net8.0\Chatbot.Shared.dll
+E:\Trabalho Inovvati\ProjetosTests\Chatbot\src\Chatbot.Shared\obj\Debug\net8.0\refint\Chatbot.Shared.dll
+E:\Trabalho Inovvati\ProjetosTests\Chatbot\src\Chatbot.Shared\obj\Debug\net8.0\Chatbot.Shared.pdb
+E:\Trabalho Inovvati\ProjetosTests\Chatbot\src\Chatbot.Shared\obj\Debug\net8.0\ref\Chatbot.Shared.dll

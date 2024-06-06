@@ -1,0 +1,132 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AC245A60-252A-4F2E-90A4-0CD7989952AC}|src\\Chatbot.Api\\Chatbot.Api.csproj|e:\\trabalho inovvati\\projetostests\\chatbot\\src\\chatbot.api\\services\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC245A60-252A-4F2E-90A4-0CD7989952AC}|src\\Chatbot.Api\\Chatbot.Api.csproj|solutionrelative:src\\chatbot.api\\services\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC245A60-252A-4F2E-90A4-0CD7989952AC}|src\\Chatbot.Api\\Chatbot.Api.csproj|e:\\trabalho inovvati\\projetostests\\chatbot\\src\\chatbot.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC245A60-252A-4F2E-90A4-0CD7989952AC}|src\\Chatbot.Api\\Chatbot.Api.csproj|solutionrelative:src\\chatbot.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC245A60-252A-4F2E-90A4-0CD7989952AC}|src\\Chatbot.Api\\Chatbot.Api.csproj|e:\\trabalho inovvati\\projetostests\\chatbot\\src\\chatbot.api\\extensions\\langchainconfigextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC245A60-252A-4F2E-90A4-0CD7989952AC}|src\\Chatbot.Api\\Chatbot.Api.csproj|solutionrelative:src\\chatbot.api\\extensions\\langchainconfigextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC245A60-252A-4F2E-90A4-0CD7989952AC}|src\\Chatbot.Api\\Chatbot.Api.csproj|e:\\trabalho inovvati\\projetostests\\chatbot\\src\\chatbot.api\\extensions\\conversationbufferextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC245A60-252A-4F2E-90A4-0CD7989952AC}|src\\Chatbot.Api\\Chatbot.Api.csproj|solutionrelative:src\\chatbot.api\\extensions\\conversationbufferextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC245A60-252A-4F2E-90A4-0CD7989952AC}|src\\Chatbot.Api\\Chatbot.Api.csproj|e:\\trabalho inovvati\\projetostests\\chatbot\\src\\chatbot.api\\chatbot.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AC245A60-252A-4F2E-90A4-0CD7989952AC}|src\\Chatbot.Api\\Chatbot.Api.csproj|solutionrelative:src\\chatbot.api\\chatbot.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1714D47-9107-4CB7-8958-05C71C44FD2E}|src\\Chatbot.Shared\\Chatbot.Shared.csproj|e:\\trabalho inovvati\\projetostests\\chatbot\\src\\chatbot.shared\\chatbot.shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C1714D47-9107-4CB7-8958-05C71C44FD2E}|src\\Chatbot.Shared\\Chatbot.Shared.csproj|solutionrelative:src\\chatbot.shared\\chatbot.shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1714D47-9107-4CB7-8958-05C71C44FD2E}|src\\Chatbot.Shared\\Chatbot.Shared.csproj|e:\\trabalho inovvati\\projetostests\\chatbot\\src\\chatbot.shared\\handler\\ipdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1714D47-9107-4CB7-8958-05C71C44FD2E}|src\\Chatbot.Shared\\Chatbot.Shared.csproj|solutionrelative:src\\chatbot.shared\\handler\\ipdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Chatbot.Api\\Program.cs",
+              "ToolTip": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.Api\\Program.cs",
+              "RelativeToolTip": "src\\Chatbot.Api\\Program.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T14:47:52.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PdfService.cs",
+              "DocumentMoniker": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.Api\\Services\\PdfService.cs",
+              "RelativeDocumentMoniker": "src\\Chatbot.Api\\Services\\PdfService.cs",
+              "ToolTip": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.Api\\Services\\PdfService.cs",
+              "RelativeToolTip": "src\\Chatbot.Api\\Services\\PdfService.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T14:47:47.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IPdfService.cs",
+              "DocumentMoniker": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.Shared\\Handler\\IPdfService.cs",
+              "RelativeDocumentMoniker": "src\\Chatbot.Shared\\Handler\\IPdfService.cs",
+              "ToolTip": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.Shared\\Handler\\IPdfService.cs",
+              "RelativeToolTip": "src\\Chatbot.Shared\\Handler\\IPdfService.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T14:45:43.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Chatbot.Api",
+              "DocumentMoniker": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.Api\\Chatbot.Api.csproj",
+              "RelativeDocumentMoniker": "src\\Chatbot.Api\\Chatbot.Api.csproj",
+              "ToolTip": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.Api\\Chatbot.Api.csproj",
+              "RelativeToolTip": "src\\Chatbot.Api\\Chatbot.Api.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-06T14:45:19.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Chatbot.Shared",
+              "DocumentMoniker": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.Shared\\Chatbot.Shared.csproj",
+              "RelativeDocumentMoniker": "src\\Chatbot.Shared\\Chatbot.Shared.csproj",
+              "ToolTip": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.Shared\\Chatbot.Shared.csproj",
+              "RelativeToolTip": "src\\Chatbot.Shared\\Chatbot.Shared.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-06T14:45:07.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LangChainConfigExtensions.cs",
+              "DocumentMoniker": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.Api\\Extensions\\LangChainConfigExtensions.cs",
+              "RelativeDocumentMoniker": "src\\Chatbot.Api\\Extensions\\LangChainConfigExtensions.cs",
+              "ToolTip": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.Api\\Extensions\\LangChainConfigExtensions.cs",
+              "RelativeToolTip": "src\\Chatbot.Api\\Extensions\\LangChainConfigExtensions.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T14:43:18.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConversationBufferExtensions.cs",
+              "DocumentMoniker": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.Api\\Extensions\\ConversationBufferExtensions.cs",
+              "RelativeDocumentMoniker": "src\\Chatbot.Api\\Extensions\\ConversationBufferExtensions.cs",
+              "ToolTip": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.Api\\Extensions\\ConversationBufferExtensions.cs",
+              "RelativeToolTip": "src\\Chatbot.Api\\Extensions\\ConversationBufferExtensions.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T14:38:46.164Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
