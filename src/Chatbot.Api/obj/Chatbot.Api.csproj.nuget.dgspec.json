@@ -156,6 +156,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "LangChain.Databases.Sqlite": {
+              "target": "Package",
+              "version": "[0.14.0, )"
+            },
+            "LangChain.Providers.Ollama": {
+              "target": "Package",
+              "version": "[0.14.0, )"
+            },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
               "version": "[5.0.17, )"

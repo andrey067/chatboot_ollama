@@ -1340,6 +1340,8 @@
       },
       "Chatbot.Shared/1.0.0": {
         "dependencies": {
+          "LangChain.Databases.Sqlite": "0.14.0",
+          "LangChain.Providers.Ollama": "0.14.0",
           "Microsoft.AspNetCore.Http.Features": "5.0.17"
         },
         "runtime": {

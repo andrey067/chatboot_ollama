@@ -1,7 +1,6 @@
+using Chatbot.Api;
+using Chatbot.Api.Common.Api;
 using Chatbot.Api.Extensions;
-using Chatbot.Api.Services;
-using Chatbot.Shared;
-using Chatbot.Shared.Handler;
 using LangChain.Serve;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,19 +10,25 @@ builder.Services.ConfigureNameGenerator();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<IPdfService, PdfService>();
+builder.AddConfiguration();
+builder.AddCrossOrigin();
+builder.AddDocumentation();
+builder.AddServices();
 
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
+    app.ConfigureDevEnvironment();
+
+await app.LoadFilesAda();
+
+app.UseLangChainServe((options) =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    options.ConfigureModels(app);    
+});
 
-app.UseLangChainServe(options => options.ConfigureModels());
+app.UseCors(ApiConfiguration.CorsPolicyName);
 
-app.UseAuthorization();
 
 app.MapControllers();
 

@@ -1,12 +1,36 @@
 {
   "version": 2,
-  "dgSpecHash": "WstRGu2tpas=",
+  "dgSpecHash": "nkhwrmFHHpQ=",
   "success": true,
   "projectFilePath": "E:\\Trabalho Inovvati\\ProjetosTests\\Chatbot\\src\\Chatbot.Shared\\Chatbot.Shared.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\andre\\.nuget\\packages\\langchain.databases.abstractions\\0.14.0\\langchain.databases.abstractions.0.14.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\langchain.databases.sqlite\\0.14.0\\langchain.databases.sqlite.0.14.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\langchain.documentloaders.abstractions\\0.14.0\\langchain.documentloaders.abstractions.0.14.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\langchain.polyfills\\0.14.0\\langchain.polyfills.0.14.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\langchain.providers.abstractions\\0.14.0\\langchain.providers.abstractions.0.14.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\langchain.providers.ollama\\0.14.0\\langchain.providers.ollama.0.14.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\langchain.serve.abstractions\\0.14.0\\langchain.serve.abstractions.0.14.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.data.sqlite\\7.0.8\\microsoft.data.sqlite.7.0.8.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.4\\microsoft.data.sqlite.core.8.0.4.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.4\\microsoft.extensions.logging.abstractions.6.0.4.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.semantickernel.abstractions\\0.17.230718.1-preview\\microsoft.semantickernel.abstractions.0.17.230718.1-preview.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.semantickernel.connectors.memory.sqlite\\0.17.230718.1-preview\\microsoft.semantickernel.connectors.memory.sqlite.0.17.230718.1-preview.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.semantickernel.core\\0.17.230718.1-preview\\microsoft.semantickernel.core.0.17.230718.1-preview.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.4\\sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.4\\sqlitepclraw.lib.e_sqlite3.2.1.4.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.4\\sqlitepclraw.provider.e_sqlite3.2.1.4.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.memory.data\\8.0.0\\system.memory.data.8.0.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
