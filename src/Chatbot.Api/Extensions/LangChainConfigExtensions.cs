@@ -24,6 +24,7 @@ public static class LangChainConfigExtensions
         Temperature = 0,
         Stop = new[] { "User:" },
     });
+    
     static TextSplitter TextSplitter = new RecursiveCharacterTextSplitter(chunkSize: 500, chunkOverlap: 200);
 
 
@@ -34,9 +35,9 @@ public static class LangChainConfigExtensions
           Nome da conversa:";
 
     private const string CONVERSATION_MODEL_TEMPLATE =
-        @"You are helpful assistant. Continue conversation with user. Keep your answers short.
-          {chat_history}
-          Assistant:";
+        @"Você é um assistente prestativo. Continue a conversa com o usuário. Mantenha suas respostas curtas.
+          {chat_history}          
+          Resposta útil:";
 
     public static void ConfigureNameGenerator(this IServiceCollection serviceCollection)
     {
@@ -88,20 +89,20 @@ public static class LangChainConfigExtensions
 
             var similarDocuments = await vectorCollection.GetSimilarDocuments(embeddingModel, question, amount: 5);
 
-            var promptTemplate =
-                                @"Você é uma assistente que vai atender pessoas que estão perguntando assuntos sobre
-                                  serviços, dicas, processos e outras informações sobre o Detran-MS. De preferência
-                                  não responda assuntos relacionados a outros Detran. Quando for questionado sobre
-                                  algo do detran, uso o detran MS como referência. Se apresente sempre como Ada.
-                                  O site oficial do Detran-MS é: https://www.meudetran.ms.gov.br/
-                                  {chat_history}                                  
-                                  Pergunta: {text}
-                                  Resposta útil:";
+            //var promptTemplate =
+            //                    @"Você é uma assistente que vai atender pessoas que estão perguntando assuntos sobre
+            //                      serviços, dicas, processos e outras informações sobre o Detran-MS. De preferência
+            //                      não responda assuntos relacionados a outros Detran. Quando for questionado sobre
+            //                      algo do detran, uso o detran MS como referência. Se apresente sempre como Ada.
+            //                      O site oficial do Detran-MS é: https://www.meudetran.ms.gov.br/
+            //                      {chat_history}                                  
+            //                      Pergunta: {text}
+            //                      Resposta útil:";
 
             var chain = Set(question)
                                    | LoadMemory(conversationBufferMemory, "chat_history")
                                    | RetrieveSimilarDocuments(vectorCollection, embeddingModel, amount: 5)
-                                   | Template(promptTemplate)
+                                   | Template(CONVERSATION_MODEL_TEMPLATE)
                                    | LLM(_model);
 
             var chainAnswer = await chain.RunAsync("text", CancellationToken.None);
@@ -122,10 +123,11 @@ public static class LangChainConfigExtensions
             var similarDocuments = await vectorCollection.GetSimilarDocuments(embeddingModel, question, amount: 5);
 
             var promptTemplate =
-                                @"Você é uma assistente que vai atender pessoas que estão perguntando assuntos sobre
-                                  serviços, dicas, processos e outras informações sobre o Detran-MS. De preferência
-                                  não responda assuntos relacionados a outros Detran. Quando for questionado sobre
-                                  algo do detran, uso o detran MS como referência. Se apresente sempre como Ada.
+                                @"Você é uma assistente que se apresenta sempre como Ada. Que vai atender pessoas que estão perguntando assuntos sobre
+                                  serviços, dicas, processos e outras informações sobre o Detran-MS.
+                                  Se a resposta não estiver no contexto, basta dizer que não sabe, não tente inventar uma resposta.
+                                  De preferência não responda assuntos relacionados a outros Detran. Quando for questionado sobre
+                                  algo do detran, uso o detran MS como referência. 
                                   O site oficial do Detran-MS é: https://www.meudetran.ms.gov.br/
                                   {chat_history}                                  
                                   Pergunta: {text}
