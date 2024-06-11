@@ -20,5 +20,9 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\Chatbot.Shared\Chatbot.Shared.csproj" />
 	</ItemGroup>
+	
+	<ItemGroup>
+	  <Folder Include="Handler\" />
+	</ItemGroup>
 
 </Project>

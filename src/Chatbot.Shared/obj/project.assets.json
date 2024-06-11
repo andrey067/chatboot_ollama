@@ -2,6 +2,26 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "LangChain.Core/0.14.0": {
+        "type": "package",
+        "dependencies": {
+          "LangChain.Databases.Abstractions": "0.14.0",
+          "LangChain.DocumentLoaders.Abstractions": "0.14.0",
+          "LangChain.Polyfills": "0.14.0",
+          "LangChain.Providers.Abstractions": "0.14.0",
+          "LangChain.Splitters.Abstractions": "0.14.0"
+        },
+        "compile": {
+          "lib/net8.0/LangChain.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LangChain.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "LangChain.Databases.Abstractions/0.14.0": {
         "type": "package",
         "compile": {
@@ -98,6 +118,24 @@
           }
         }
       },
+      "LangChain.Providers.OpenAI/0.14.0": {
+        "type": "package",
+        "dependencies": {
+          "LangChain.Polyfills": "0.14.0",
+          "LangChain.Providers.Abstractions": "0.14.0",
+          "tryAGI.OpenAI": "2.0.6"
+        },
+        "compile": {
+          "lib/net8.0/LangChain.Providers.OpenAI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LangChain.Providers.OpenAI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "LangChain.Serve.Abstractions/0.14.0": {
         "type": "package",
         "compile": {
@@ -107,6 +145,19 @@
         },
         "runtime": {
           "lib/net8.0/LangChain.Serve.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LangChain.Splitters.Abstractions/0.14.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/LangChain.Splitters.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LangChain.Splitters.Abstractions.dll": {
             "related": ".xml"
           }
         }
@@ -274,6 +325,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.SemanticKernel.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenAI.Constants/2.0.6": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/OpenAI.Constants.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OpenAI.Constants.dll": {
             "related": ".xml"
           }
         }
@@ -502,10 +566,61 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
+      },
+      "Tiktoken/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Tiktoken.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Tiktoken.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "tryAGI.OpenAI/2.0.6": {
+        "type": "package",
+        "dependencies": {
+          "OpenAI.Constants": "2.0.6",
+          "Tiktoken": "1.2.0"
+        },
+        "compile": {
+          "lib/net8.0/OpenAI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OpenAI.dll": {
+            "related": ".xml"
+          }
+        }
       }
     }
   },
   "libraries": {
+    "LangChain.Core/0.14.0": {
+      "sha512": "I2hPANM++IRFrN4WyfLM9kszwBC5KE+3Q2Z2p5j2osHYMXGlwuiWGKks041MYoeB7eQdeMYZnHEun6mg+49E7g==",
+      "type": "package",
+      "path": "langchain.core/0.14.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "langchain.core.0.14.0.nupkg.sha512",
+        "langchain.core.nuspec",
+        "lib/net462/LangChain.Core.dll",
+        "lib/net462/LangChain.Core.xml",
+        "lib/net6.0/LangChain.Core.dll",
+        "lib/net6.0/LangChain.Core.xml",
+        "lib/net8.0/LangChain.Core.dll",
+        "lib/net8.0/LangChain.Core.xml",
+        "lib/netstandard2.0/LangChain.Core.dll",
+        "lib/netstandard2.0/LangChain.Core.xml",
+        "nuget_icon.png"
+      ]
+    },
     "LangChain.Databases.Abstractions/0.14.0": {
       "sha512": "sJoI3N5tseOxYYlZao3pldEb7QGHxXUPV4lFzEJSDb4MNPlaTDCeM8YvDudanJ5WnXgiPRKV2SNJpHeuWLyLxA==",
       "type": "package",
@@ -630,6 +745,27 @@
         "nuget_icon.png"
       ]
     },
+    "LangChain.Providers.OpenAI/0.14.0": {
+      "sha512": "ZcoOkWdA6dCFKzQ1Z4LkqEdowaX4k8/IhCMDBQXld/c6LcK3RmAJ+W8jHerTAvUeX7v4x1Zh0Dzzlnk6eihTNg==",
+      "type": "package",
+      "path": "langchain.providers.openai/0.14.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "langchain.providers.openai.0.14.0.nupkg.sha512",
+        "langchain.providers.openai.nuspec",
+        "lib/net462/LangChain.Providers.OpenAI.dll",
+        "lib/net462/LangChain.Providers.OpenAI.xml",
+        "lib/net6.0/LangChain.Providers.OpenAI.dll",
+        "lib/net6.0/LangChain.Providers.OpenAI.xml",
+        "lib/net8.0/LangChain.Providers.OpenAI.dll",
+        "lib/net8.0/LangChain.Providers.OpenAI.xml",
+        "lib/netstandard2.0/LangChain.Providers.OpenAI.dll",
+        "lib/netstandard2.0/LangChain.Providers.OpenAI.xml",
+        "nuget_icon.png"
+      ]
+    },
     "LangChain.Serve.Abstractions/0.14.0": {
       "sha512": "w4TU5PKUicJ9myTZDMsLVQZlHJO/plwjqUwlRNXRnROzFUA99m5FJx9a/HxP6VWkUQkGG/sxwmz4iB5NiOhy8g==",
       "type": "package",
@@ -646,6 +782,27 @@
         "lib/net8.0/LangChain.Serve.Abstractions.xml",
         "lib/netstandard2.0/LangChain.Serve.Abstractions.dll",
         "lib/netstandard2.0/LangChain.Serve.Abstractions.xml",
+        "nuget_icon.png"
+      ]
+    },
+    "LangChain.Splitters.Abstractions/0.14.0": {
+      "sha512": "jWe/nXh869jtpyiUtS1u3ExG91Jy1CNLDCtzFmf2tbhMLpXHD4RFamcH4zxio3MtNCdWwrYfby1bab6doUWMKw==",
+      "type": "package",
+      "path": "langchain.splitters.abstractions/0.14.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "langchain.splitters.abstractions.0.14.0.nupkg.sha512",
+        "langchain.splitters.abstractions.nuspec",
+        "lib/net462/LangChain.Splitters.Abstractions.dll",
+        "lib/net462/LangChain.Splitters.Abstractions.xml",
+        "lib/net6.0/LangChain.Splitters.Abstractions.dll",
+        "lib/net6.0/LangChain.Splitters.Abstractions.xml",
+        "lib/net8.0/LangChain.Splitters.Abstractions.dll",
+        "lib/net8.0/LangChain.Splitters.Abstractions.xml",
+        "lib/netstandard2.0/LangChain.Splitters.Abstractions.dll",
+        "lib/netstandard2.0/LangChain.Splitters.Abstractions.xml",
         "nuget_icon.png"
       ]
     },
@@ -897,6 +1054,29 @@
         "lib/netstandard2.0/Microsoft.SemanticKernel.Core.xml",
         "microsoft.semantickernel.core.0.17.230718.1-preview.nupkg.sha512",
         "microsoft.semantickernel.core.nuspec"
+      ]
+    },
+    "OpenAI.Constants/2.0.6": {
+      "sha512": "jXK0U2YHOGk3BaKkkIsgrmqiBJbBtleH6hzF3kl/CNiE+cXF0+5JjPZm3FeCQVNqq8suDW6GPWWraOfvHR2a4w==",
+      "type": "package",
+      "path": "openai.constants/2.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/OpenAI.Constants.dll",
+        "lib/net462/OpenAI.Constants.xml",
+        "lib/net6.0/OpenAI.Constants.dll",
+        "lib/net6.0/OpenAI.Constants.xml",
+        "lib/net7.0/OpenAI.Constants.dll",
+        "lib/net7.0/OpenAI.Constants.xml",
+        "lib/net8.0/OpenAI.Constants.dll",
+        "lib/net8.0/OpenAI.Constants.xml",
+        "lib/netstandard2.0/OpenAI.Constants.dll",
+        "lib/netstandard2.0/OpenAI.Constants.xml",
+        "nuget_icon.png",
+        "openai.constants.2.0.6.nupkg.sha512",
+        "openai.constants.nuspec"
       ]
     },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.4": {
@@ -1173,12 +1353,64 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Tiktoken/1.2.0": {
+      "sha512": "YeEWMh6Byyb162ZWFmagl11GiFragK4OmMdVQ8w342g/fC27nwuABRIVS5bv8yM+58UWAncHmW4F6JHjkPJyeQ==",
+      "type": "package",
+      "path": "tiktoken/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net461/Tiktoken.dll",
+        "lib/net461/Tiktoken.xml",
+        "lib/net6.0/Tiktoken.dll",
+        "lib/net6.0/Tiktoken.xml",
+        "lib/net7.0/Tiktoken.dll",
+        "lib/net7.0/Tiktoken.xml",
+        "lib/net8.0/Tiktoken.dll",
+        "lib/net8.0/Tiktoken.xml",
+        "lib/netstandard2.0/Tiktoken.dll",
+        "lib/netstandard2.0/Tiktoken.xml",
+        "lib/netstandard2.1/Tiktoken.dll",
+        "lib/netstandard2.1/Tiktoken.xml",
+        "nuget_icon.png",
+        "tiktoken.1.2.0.nupkg.sha512",
+        "tiktoken.nuspec"
+      ]
+    },
+    "tryAGI.OpenAI/2.0.6": {
+      "sha512": "XMFu6EaVDEWYamNwpf3H8+bcEmtQ0P1YEB4AnG8G4nTZ8o5UeueCt457lePRgFEPt0ophZ8B6A+STQ73Q0ZQZg==",
+      "type": "package",
+      "path": "tryagi.openai/2.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "analyzers/dotnet/H.Generators.Extensions.dll",
+        "analyzers/dotnet/OpenAI.Generators.dll",
+        "lib/net462/OpenAI.dll",
+        "lib/net462/OpenAI.xml",
+        "lib/net6.0/OpenAI.dll",
+        "lib/net6.0/OpenAI.xml",
+        "lib/net7.0/OpenAI.dll",
+        "lib/net7.0/OpenAI.xml",
+        "lib/net8.0/OpenAI.dll",
+        "lib/net8.0/OpenAI.xml",
+        "lib/netstandard2.0/OpenAI.dll",
+        "lib/netstandard2.0/OpenAI.xml",
+        "nuget_icon.png",
+        "tryagi.openai.2.0.6.nupkg.sha512",
+        "tryagi.openai.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "LangChain.Core >= 0.14.0",
       "LangChain.Databases.Sqlite >= 0.14.0",
       "LangChain.Providers.Ollama >= 0.14.0",
+      "LangChain.Providers.OpenAI >= 0.14.0",
       "Microsoft.AspNetCore.Http.Features >= 5.0.17"
     ]
   },
@@ -1232,11 +1464,19 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "LangChain.Core": {
+            "target": "Package",
+            "version": "[0.14.0, )"
+          },
           "LangChain.Databases.Sqlite": {
             "target": "Package",
             "version": "[0.14.0, )"
           },
           "LangChain.Providers.Ollama": {
+            "target": "Package",
+            "version": "[0.14.0, )"
+          },
+          "LangChain.Providers.OpenAI": {
             "target": "Package",
             "version": "[0.14.0, )"
           },
@@ -1256,12 +1496,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.4, 8.0.4]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.4, 8.0.4]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.4, 8.0.4]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.4.24267.66/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

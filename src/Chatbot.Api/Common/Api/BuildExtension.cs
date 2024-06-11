@@ -39,9 +39,8 @@ public static class BuildExtension
 
     public static void AddServices(this WebApplicationBuilder builder)
     {
-        builder.Services.AddTransient<IPdfService, PdfSHandler>();
-        builder.Services.AddTransient<IVectorAdaHandler, VectorAdaHandler>();
-        builder.Services.AddTransient<IAdaAiHandler, AdaAiHandler>();
+
+
     }
 }
 

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="LangChain" Version="0.14.0" />
+		<PackageReference Include="LangChain.Core" Version="0.14.0" />
+		<PackageReference Include="LangChain.Databases.Sqlite" Version="0.14.0" />
+		<PackageReference Include="LangChain.DocumentLoaders.Pdf" Version="0.14.0" />				
+		<PackageReference Include="LangChain.Providers.Ollama" Version="0.14.0" />
+		<PackageReference Include="LangChain.Serve" Version="0.14.0" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Chatbot.Shared\Chatbot.Shared.csproj" />
+	</ItemGroup>
+</Project>
